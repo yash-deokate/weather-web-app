@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Weather</title>
+        <link rel="stylesheet" href="./style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet"> 
+    </head>
+
+    <body> 
+        <div class="flex-container">
+            <div class="weather" style="flex-grow: 8;">
+                <div class="header" style="flex-grow: 8;">the.weather</div>
+                <div class="temp" style="flex-grow:4">
+                    <div class="degree">
+                        <div id="degree">16</div>
+                        <div>°</div>
+                    </div>
+                    
+                    <div class="city">
+                        <div  id="cityName" style="font-size: 50px; ">London</div>
+                        <div id="date">06:09-Monday 9 Sep'19</div>
+                    </div>
+                    <div style="display: flex; flex-direction: column;">
+                        <div class="icon"><img id="wicon" src=" http://openweathermap.org/img/wn/10d@2x.png" alt=""></div>
+                        <div id="wtype" class="wtype";>Cloudy</div>
+                    </div>
+                    
+                </div>
+            </div>
+            <div class="menu" style="flex-grow: 4;">
+                <div style="line-height: 70px;">
+                    Another Location
+                    <div class="searchPanel">
+                    <div style="float: left;"><input type="text" placeholder="Enter City Name" class="cityIn" ></div>
+                    <div style="float:right;"><button type="submit" class="citySub"><img src="search.jpg" style="width:70px; height: 70px; position: relative;
+                        transform: translate(-2%,-3%);"></button></div>
+                    </div>
+                    <div style="opacity: 0.5;">
+                       <ul style="list-style-type: none;" id="cityList">
+
+                       </ul>
+                    </div>
+                    
+                </div>
+                <hr>
+                <div style="line-height: 70px;">
+                    <strong>Weather Details</strong><br>
+                    <div>
+                        <p style="float:left; opacity: 0.5;">Cloudy</p>
+                        <p id="cloudval" style="float: right; font-weight: bold;">86%</p><br>
+                        <p style="float:left; opacity: 0.5;">Humidity</p>
+                        <p id="humidityval" style="float: right; font-weight: bold;">62%</p><br>
+                        <p style="float:left; opacity: 0.5;">Wind</p>
+                        <p id="speedval" style="float: right; font-weight: bold;">8km/h</p><br>
+                    </div>
+                    
+                </div>
+                <hr>
+                <div style="line-height: 70px;">
+                    <strong>Next Days</strong>
+                    <div style="opacity: 0.5;">
+                        
+                    </div>
+                </div>
+            </div>
+        </div> 
+        <script src="script.js"></script> 
+    </body>
+</html>

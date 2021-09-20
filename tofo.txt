@@ -1,0 +1,6 @@
+ #search bar
+ #button
+ #api
+    #basic city result
+    #extra info
+    #recent city list

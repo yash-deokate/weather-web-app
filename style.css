@@ -1,0 +1,128 @@
+body{
+    background-image: url("background 2.jpg");
+    background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover; 
+  overflow: hidden;
+  font-family: "Poppins";
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+.flex-container{
+    display: flex;
+    flex-direction: row;
+    height: 100vh;
+    margin: 0px;
+    padding: 0px;
+    /* background-color: coral; */
+}
+.flex-container>div{
+    height: 100vh;
+    width: 50px;
+    
+    padding: 20px;
+    
+    text-align: center;
+}
+
+.menu::-webkit-scrollbar {
+    display: none;
+  }
+.menu{
+    /* background-color: crimson; */
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(0, 0, 0, 0.8);  
+    backdrop-filter: blur(100px);
+    overflow: auto;
+    -ms-overflow-style: none;
+  scrollbar-width: none;
+    
+}
+.weather{
+    /* background-color: cyan; */
+    display: flex;
+    flex-direction: column;
+}
+.menu>div{
+    height: 100vh;
+    width: 1;
+    /* background-color: darkred; */
+    padding: 1px;
+    margin: 2px;
+    text-align: left;
+    color: white;
+    
+}
+.header{
+    height: 1vh;
+    width: 1;
+    /* background-color: darkred; */
+    padding-left: 100px;
+    font-size:x-large;
+    font-weight:bold;
+    color: white;
+    margin: 2px;
+    text-align: left;
+}
+.temp{
+    height: 1vh;
+    /* background-color: darkred; */
+    padding-left: 100px;
+    margin: 2px;
+    text-align: left;
+    display: flex;
+    flex-direction: row;
+    color: white;
+}
+
+.degree{
+    font-size: 100px;
+    display: flex;
+    flex-direction: row;
+    padding-right: 10px;
+}
+.city{
+    padding-top: 20px;
+    text-align: center;
+    padding-left: 10px;
+} 
+.wtype{
+    padding-left: 30px;
+    text-align: center;
+}
+#wicon{
+    padding-left: 30px;
+    padding-top: 10px;
+    width: 70px; /* width of container */
+    height: 80px; /* height of container */
+    object-fit: cover;
+    align-self: center;
+}
+
+input[type=text] {
+    width: 32em;
+    margin-right: 20px;
+    height: 50%;
+    background: none;
+    color: white;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom-color: white; 
+}
+
+.searchPanel{
+    display: flex;
+    flex-direction:row;
+ 
+}
+button{
+    width: 70px;
+    height: 70px;
+    margin: 0;
+    position: relative;
+    transform: translate(0%,-10%);
+}
