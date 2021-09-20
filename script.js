@@ -2,18 +2,11 @@ var cities=["London","New York","Mumbai","Kolkata"];
 var button=document.querySelector('.citySub');
 var cityIn=document.querySelector('.cityIn ');
 window.setInterval(updatetime(),1000);
-
-
-if (location.protocol === 'http:') {
-   url = 'http://api.openweathermap.org/data/2.5/weather?lat=21.1682895&lon=-101.6723306&units=imperial&APPID=ec50a6072ac189dee111acdd3a38ab9f';
-} else {
-   url = 'https://api.openweathermap.org/data/2.5/weather?lat=21.1682895&lon=-101.6723306&units=imperial&APPID=ec50a6072ac189dee111acdd3a38ab9f';
-}
-
 updateCity();
+
 button.addEventListener('click',function(){
     
-    fetch('http://api.openweathermap.org/data/2.5/weather?q='+cityIn.value+'&appid=35c9636fb108154795015c16b42014d3')
+    fetch(location.protocol === 'http:'?'http://api.openweathermap.org/data/2.5/weather?q='+cityIn.value+'&appid=35c9636fb108154795015c16b42014d3':'https://api.openweathermap.org/data/2.5/weather?q='+cityIn.value+'&appid=35c9636fb108154795015c16b42014d3')
     .then(response => response.json())
     .then(data => {
         document.getElementById("cityName").innerHTML=data['name'];
